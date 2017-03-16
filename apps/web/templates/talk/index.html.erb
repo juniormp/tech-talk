@@ -1,0 +1,14 @@
+<h2>All Talks</h2>
+
+<% if talks.any? %>
+  <div id="books">
+    <% talks.each do |talk| %>
+      <div class="talk">
+        <h1><%= talk.name %></h1>
+        <p><%= talk.description %></p>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <p class="placeholder">There are no talks yet.</p>
+<% end %>
