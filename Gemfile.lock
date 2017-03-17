@@ -51,6 +51,9 @@ GEM
       dry-equalizer (~> 0.2)
       dry-logic (~> 0.4, >= 0.4.0)
       dry-types (~> 0.9, >= 0.9.0)
+    fabrication (2.16.1)
+    factory_girl (4.8.0)
+      activesupport (>= 3.0.0)
     hanami (1.0.0.beta2)
       bundler (~> 1.13)
       concurrent-ruby (~> 1.0)
@@ -70,6 +73,9 @@ GEM
     hanami-controller (1.0.0.beta2)
       hanami-utils (~> 1.0.0.beta1)
       rack (~> 2.0)
+    hanami-fabrication (0.1.0)
+      fabrication (~> 2.16)
+      hanami-utils (< 2.0)
     hanami-helpers (1.0.0.beta1)
       hanami-utils (~> 1.0.0.beta1)
     hanami-mailer (1.0.0.beta1)
@@ -171,7 +177,9 @@ PLATFORMS
 DEPENDENCIES
   capybara
   dotenv (~> 2.0)
+  factory_girl
   hanami (= 1.0.0.beta2)
+  hanami-fabrication
   hanami-model (~> 1.0.0.beta2)
   jsonapi-serializers
   rake

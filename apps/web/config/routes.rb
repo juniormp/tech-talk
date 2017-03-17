@@ -1,8 +1,4 @@
-# Configure your routes here
-# See: http://hanamirb.org/guides/routing/overview/
-#
-# Example:
-# get '/hello', to: ->(env) { [200, {}, ['Hello from Hanami!']] }
+post '/talk', to: 'talk#create'
 get '/talk', to: 'talk#index'
 
 get '/hello', to: ->(env) { [200, {}, ['Hello from Hanami!']] }
